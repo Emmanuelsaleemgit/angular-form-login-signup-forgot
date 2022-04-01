@@ -28,5 +28,9 @@ export class RegisterComponent implements OnInit
       password: ["",[Validators.required]]
     })
   }
+  register()
+  {
+    console.log(this.Registerform)
+  }
 
 }

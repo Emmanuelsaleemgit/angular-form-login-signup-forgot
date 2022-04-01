@@ -19,7 +19,13 @@ export class ForgotPasswordComponent implements OnInit
     this.forgotpass = this.formbuilder.group({
       email: ["", [Validators.required, Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,3}$')]]
     })
+
+  }
   
+  forgotpassword()
+  {
+    console.log(this.forgotpass)
+
   }
 
 }
